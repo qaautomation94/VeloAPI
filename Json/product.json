@@ -1,0 +1,288 @@
+{
+  "ExternalProductId": "9207-260664958",
+  "Name": "LUwiACftrfSouXkçÖçùæåÄë£äÜòù×ƒ",
+  "Description": "Sit back and pop a cold one with new Soft Enamel Metal Bottle Openers. Your customer's logo will be featured in style and function for years to come with this durable product. Sure to be a customer favorite, place your order today! Price includes a digital proof and up to 4 PMS colors with PMS color match.",
+  "Summary": "Price Includes: Digital Proof, Includes up 4 PMS Colors  Lead Time: 15 Business days after proof approval + applicable transit tim",
+  "AsiProdNo": "0001ASId",
+  "CanShipInPlainBox": false,
+  "SEOFlag": false,
+  "DistributorViewOnly": true,
+  "ItemAssembled": true,
+  "SupplierContact": false,
+  "LineNames": [],
+  "PriceConfirmedThru": "2021-09-04T00:00:00",
+  "CanOrderLessThanMinimum": true,
+  "DeliveryOption": "None",
+  "IndustrySegment": "Promotional",
+  "Availability": [
+    {
+      "ParentCriteria": "Product Color",
+      "ChildCriteria": "Additional Location",
+      "AvailableVariations": [
+        {
+          "ParentValue": [
+            "ASPIN-SIBO-0.79X1.5"
+          ],
+          "ChildValue": [
+            "left"
+          ]
+        },
+        {
+          "ParentValue": [
+            "Gray"
+          ],
+          "ChildValue": [
+            "left"
+          ]
+        },
+        {
+          "ParentValue": [
+            "Orange"
+          ],
+          "ChildValue": [
+            "left"
+          ]
+        }
+      ]
+    }
+  ],
+  "ProductKeywords": [
+    "Soft",
+    "Enamel",
+    "Bottle",
+    "Openers",
+    "Bar",
+    "Brewery",
+    "Beer",
+    "Bottle Opener",
+    "ASPIN-SIBO",
+    "SIBO"
+  ],
+  "Categories": [
+    "OPENERS-BOTTLE"
+  ],
+  "Images": [
+    {
+      "ImageURL": "https://media.asicdn.com/images/orig/42780000/42787426.jpg",
+      "Rank": 1,
+      "IsPrimary": true,
+      "Isvirtualized": false,
+      "MediaTags": [],
+      "FileName": "0001ASI-ASPIN-SIBO-0-79X1-5.jpg",
+      "Dimensions": "1500x1500",
+      "Id": 42787426,
+      "CreatedDateUtc": "2020-09-04T15:40:57",
+      "ImageSize": 210146
+    }
+  ],
+  "PriceGrids": [
+    {
+      "IsBasePrice": true,
+      "Description": "0.79\" x 1.5\"",
+      "PriceIncludes": "1 color/1 location imprint",
+      "Sequence": 1,
+      "Prices": [
+        {
+          "Sequence": 1,
+          "Qty": 100,
+          "ListPrice": "4.79",
+          "NetCost": "2.874",
+          "DiscountCode": "R",
+          "PriceUnit": {
+            "ItemsPerUnit": "1"
+          },
+          "IsQUR": false,
+          "Currency": "USD"
+        },
+        {
+          "Sequence": 2,
+          "Qty": 250,
+          "ListPrice": "3.28",
+          "NetCost": "1.968",
+          "DiscountCode": "R",
+          "PriceUnit": {
+            "ItemsPerUnit": "1"
+          },
+          "IsQUR": false,
+          "Currency": "USD"
+        },
+        {
+          "Sequence": 3,
+          "Qty": 500,
+          "ListPrice": "2.32",
+          "NetCost": "1.392",
+          "DiscountCode": "R",
+          "PriceUnit": {
+            "ItemsPerUnit": "1"
+          },
+          "IsQUR": false,
+          "Currency": "USD"
+        },
+        {
+          "Sequence": 4,
+          "Qty": 1000,
+          "ListPrice": "1.97",
+          "NetCost": "1.182",
+          "DiscountCode": "R",
+          "PriceUnit": {
+            "ItemsPerUnit": "1"
+          },
+          "IsQUR": false,
+          "Currency": "USD"
+        }
+      ]
+    },
+    {
+      "IsBasePrice": false,
+      "Description": "OTHER",
+      "Sequence": 2,
+      "ServiceCharge": "Required",
+      "UpchargeType": "Set-up Charge",
+      "UpchargeUsageType": "Per Order",
+      "Prices": [
+        {
+          "Sequence": 1,
+          "Qty": 1,
+          "ListPrice": "75.0",
+          "NetCost": "60.0",
+          "DiscountCode": "V",
+          "PriceUnit": {
+            "ItemsPerUnit": "1"
+          },
+          "IsQUR": false,
+          "Currency": "USD"
+        }
+      ],
+      "PriceConfigurations": [
+        {
+          "Criteria": "Imprint Method",
+          "Value": [
+            "UNIMPRINTED"
+          ]
+        }
+      ]
+    }
+  ],
+  "ProductSKUs": [
+    {
+      "SKU": "0001ASI_ASPIN-SIBO-0.79X1.5",
+      "Inventory": {
+        "InventoryLink": "",
+        "InventoryStatus": "",
+        "InventoryQuantity": ""
+      },
+      "Hazmat": "FALSE",
+      "Configurations": [
+        {
+          "Criteria": "Product Color",
+          "Value": [
+            "ASPIN-SIBO-0.79X1.5"
+          ]
+        }
+      ]
+    }
+  ],
+  "PriceType": "L",
+  "InventoryAPI": false,
+  "OrderCreationAPI": false,
+  "OrderStatusAPI": false,
+  "PricingAPI": false,
+  "ProductConfigurations": {
+    "Samples": {
+      "SpecSampleAvailable": true,
+      "SpecInfo": "",
+      "ProductSampleAvailable": true,
+      "ProductSampleInfo": ""
+    },
+    "Colors": [
+      {
+        "Name": "UNCLASSIFIED/OTHER",
+        "Alias": "ASPIN-SIBO-0.79X1.5"
+      },
+      {
+        "Name": "MEDIUM GRAY",
+        "Alias": "Gray"
+      },
+      {
+        "Name": "MEDIUM ORANGE",
+        "Alias": "Orange"
+      }
+    ],
+    "Sizes": {},
+    "Options": [
+      {
+        "OptionType": "Shipping",
+        "Name": "Handling charges",
+        "Values": [
+          {
+            "Value": "0.79\" x 1.5\""
+          }
+        ],
+        "AdditionalInformation": "",
+        "CanOnlyOrderOne": false,
+        "RequiredForOrder": false
+      }
+    ],
+    "Origins": [
+      {
+        "Name": "U.S.A."
+      }
+    ],
+    "ImprintMethods": [
+      {
+        "Type": "UNIMPRINTED",
+        "Alias": "UNIMPRINTED"
+      },
+      {
+        "Type": "OTHER",
+        "Alias": "SOFT ENAMEL COLORFILL"
+      }
+    ],
+    "Personalization": [
+      {
+        "Type": "PERSONALIZATION",
+        "Alias": "PERSONALIZATION"
+      }
+    ],
+    "RushTime": {
+      "Available": true,
+      "Values": [
+        {
+          "BusinessDays": "",
+          "Details": ""
+        }
+      ]
+    },
+    "AdditionalLocations": [
+      {
+        "Name": "left"
+      }
+    ],
+    "ShippingEstimates": {
+      "Dimensions": {
+        "Length": "10",
+        "Width": "20",
+        "Height": "15",
+        "LengthUnit": "in",
+        "WidthUnit": "in",
+        "HeightUnit": "in"
+      },
+      "Weight": [
+        {
+          "Value": "50",
+          "Unit": "lbs"
+        }
+      ]
+    }
+  },
+  "Hazmat": "UNSPECIFIED",
+  "CloseOut": true,
+  "ProductType": "",
+  "Prop65": {},
+  "Prop65Applicable": "NO",
+  "MarketSegments": [
+    "USAALL"
+  ],
+  "ProductUrl": "",
+  "FreeShipping": false
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-16T19:27:18 PKT" name="Default suite" finished-at="2020-10-16T19:28:49 PKT" duration-ms="90805">
+    <groups>
+    </groups>
+    <test started-at="2020-10-16T19:27:18 PKT" name="Default test" finished-at="2020-10-16T19:28:49 PKT" duration-ms="90805">
+      <class name="Products.ProductAPI">
+        <test-method is-config="true" signature="TokenGeneration()[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:12 PKT" name="TokenGeneration" finished-at="2020-10-16T19:27:18 PKT" duration-ms="6353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TokenGeneration -->
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:19 PKT" name="ExtentReport" finished-at="2020-10-16T19:27:19 PKT" duration-ms="814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="PostProduct()[pri:1, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:20 PKT" name="PostProduct" finished-at="2020-10-16T19:27:45 PKT" duration-ms="25648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:45 PKT" name="getResult" finished-at="2020-10-16T19:27:47 PKT" duration-ms="1320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostProduct status=SUCCESS method=ProductAPI.PostProduct()[pri:1, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="GetPostedProduct()[pri:2, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:47 PKT" name="GetPostedProduct" finished-at="2020-10-16T19:27:52 PKT" depends-on-methods="Products.ProductAPI.PostProduct" duration-ms="5072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPostedProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:52 PKT" name="getResult" finished-at="2020-10-16T19:27:52 PKT" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetPostedProduct status=SUCCESS method=ProductAPI.GetPostedProduct()[pri:2, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DeleteProduct()[pri:3, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:52 PKT" name="DeleteProduct" finished-at="2020-10-16T19:27:54 PKT" depends-on-methods="Products.ProductAPI.PostProduct" duration-ms="2032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:54 PKT" name="getResult" finished-at="2020-10-16T19:27:54 PKT" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteProduct status=SUCCESS method=ProductAPI.DeleteProduct()[pri:3, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="PostProductwithGreaterThanRequiredNameLength()[pri:4, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:27:54 PKT" name="PostProductwithGreaterThanRequiredNameLength" finished-at="2020-10-16T19:28:01 PKT" duration-ms="6869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostProductwithGreaterThanRequiredNameLength -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:01 PKT" name="getResult" finished-at="2020-10-16T19:28:01 PKT" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostProductwithGreaterThanRequiredNameLength status=SUCCESS method=ProductAPI.PostProductwithGreaterThanRequiredNameLength()[pri:4, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="PostProductwithSpecialCharacterInNme()[pri:5, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:01 PKT" name="PostProductwithSpecialCharacterInNme" finished-at="2020-10-16T19:28:24 PKT" duration-ms="22848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostProductwithSpecialCharacterInNme -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:24 PKT" name="getResult" finished-at="2020-10-16T19:28:24 PKT" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostProductwithSpecialCharacterInNme status=SUCCESS method=ProductAPI.PostProductwithSpecialCharacterInNme()[pri:5, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="GetAllProducts()[pri:6, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:24 PKT" name="GetAllProducts" finished-at="2020-10-16T19:28:43 PKT" duration-ms="18636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllProducts -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:43 PKT" name="getResult" finished-at="2020-10-16T19:28:43 PKT" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetAllProducts status=SUCCESS method=ProductAPI.GetAllProducts()[pri:6, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="GetProductByXID()[pri:7, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:43 PKT" name="GetProductByXID" finished-at="2020-10-16T19:28:45 PKT" duration-ms="1984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetProductByXID -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:45 PKT" name="getResult" finished-at="2020-10-16T19:28:45 PKT" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetProductByXID status=SUCCESS method=ProductAPI.GetProductByXID()[pri:7, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DeleteExistingProduct()[pri:8, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:45 PKT" name="DeleteExistingProduct" finished-at="2020-10-16T19:28:47 PKT" duration-ms="1819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteExistingProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:47 PKT" name="getResult" finished-at="2020-10-16T19:28:47 PKT" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DeleteExistingProduct status=SUCCESS method=ProductAPI.DeleteExistingProduct()[pri:8, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="GetDeletedProduct()[pri:9, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:47 PKT" name="GetDeletedProduct" finished-at="2020-10-16T19:28:49 PKT" duration-ms="1598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeletedProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Products.ProductAPI@229d10bd]" started-at="2020-10-16T19:28:49 PKT" name="getResult" finished-at="2020-10-16T19:28:49 PKT" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetDeletedProduct status=SUCCESS method=ProductAPI.GetDeletedProduct()[pri:9, instance:Products.ProductAPI@229d10bd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- Products.ProductAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
