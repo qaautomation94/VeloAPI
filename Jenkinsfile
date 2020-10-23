@@ -5,21 +5,21 @@ pipeline {
     
         stage('Compile Stage') { 
             steps {
-                withMaven(maven : 'Maven_Home')
+              //  withMaven(maven : 'Maven_Home')
                 sh 'mvn clean compile'
             }
         }
         
         stage('Test Stage') { 
             steps {
-                withMaven(maven : 'Maven_Home')
+               // withMaven(maven : 'Maven_Home')
                 sh 'mvn test'
             }
         }
         stage('Deploy Stage') { 
             steps {
-                 withMaven(maven : 'Maven_Home')
-                 sh 'mvn deploy'
+               //  withMaven(maven : 'Maven_Home')
+               //  sh 'mvn deploy'
             }
         }
     }
