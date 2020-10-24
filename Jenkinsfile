@@ -1,28 +1,20 @@
 pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            agent any
-            steps {
-                checkout scm
-                sh 'make'
-                stash includes: '**/target/*.jar', name: 'app' 
-            }
-        }
-        
-        stage('Test on Windows') {
-            agent {
-                label 'windows'
-            }
-            steps {
-                unstash 'app'
-                bat 'make check' 
-            }
-            post {
-                always {
-                    junit '**/target/*.xml'
-                }
-            }
-        }
+  agent any
+  stages {
+    stage('Source') { // Get code
+      steps {
+        // get code from our Git repository
+        git 'https://github.com/qaautomation94/VeloAPI'
+      }
     }
+    stage('Compile') { // Compile and do unit testing
+      tools {
+        maven 'Maven_Home'
+      }
+      steps {
+        // run Gradle to execute compile and unit testing
+        sh 'maven clean compile test'
+      }
+    }
+  }
 }
