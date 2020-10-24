@@ -1,12 +1,23 @@
-pipeline {
-    agent any
-    
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
-        
-        stage('Test') {
-            steps {
-                sh 'mvn test'
+        stage('Build') { 
+            steps { 
+                sh 'make' 
             }
         }
-    }   
+        stage('Test'){
+            steps {
+                sh 'make check'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'make publish'
+            }
+        }
+    }
 }
