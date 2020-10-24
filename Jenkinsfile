@@ -10,8 +10,7 @@ pipeline {
     stage('Compile') { // Compile and do unit testing
       tools {
         maven 'Maven_Home'
-        git 'agent-git'
-      }
+              }
       steps {
         // run Gradle to execute compile and unit testing
         sh 'maven clean compile test'
