@@ -6,21 +6,22 @@ pipeline {
         stage('Compile Stage') { 
             steps {
               //  withMaven(maven : 'Maven_Home')
-                sh 'mvn clean compile'
+                sh 'mvn clean compile test'
             }
         }
         
-        stage('Test Stage') { 
-            steps {
+    //    stage('Test Stage') { 
+     //       steps {
                // withMaven(maven : 'Maven_Home')
-                sh 'mvn test'
-            }
-        }
-        stage('Deploy Stage') { 
-            steps {
+       //         sh 'mvn test'
+         //   }
+        //}
+       // stage('Deploy Stage') { 
+         //   steps {
                //  withMaven(maven : 'Maven_Home')
-                 sh 'mvn deploy'
-            }
-        }
+           //      sh 'mvn deploy'
+            //}
+        //}
+        
     }
 }
