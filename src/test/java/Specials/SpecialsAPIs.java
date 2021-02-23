@@ -1,4 +1,4 @@
-package EndPoints;
+package Specials;
 
 
 
@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import EndPoints.Base;
+import Specials.Base;
 import Videos.TestData;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;

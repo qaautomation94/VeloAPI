@@ -1,0 +1,76 @@
+[{
+	"ID": 846317645,
+	"IsBasePrice": true,
+	"Description": "0.79\" x 1.5\"",
+	"PriceIncludes": "1 color/1 location imprint",
+	"Sequence": 1,
+	"Prices": [{
+		"Sequence": 1,
+		"Qty": 100,
+		"ListPrice": "4.79",
+		"NetCost": "2.874",
+		"DiscountCode": "R",
+		"PriceUnit": {
+			"ItemsPerUnit": "1"
+		},
+		"IsQUR": false,
+		"Currency": "USD"
+	}, {
+		"Sequence": 2,
+		"Qty": 250,
+		"ListPrice": "3.28",
+		"NetCost": "1.968",
+		"DiscountCode": "R",
+		"PriceUnit": {
+			"ItemsPerUnit": "1"
+		},
+		"IsQUR": false,
+		"Currency": "USD"
+	}, {
+		"Sequence": 3,
+		"Qty": 500,
+		"ListPrice": "2.32",
+		"NetCost": "1.392",
+		"DiscountCode": "R",
+		"PriceUnit": {
+			"ItemsPerUnit": "1"
+		},
+		"IsQUR": false,
+		"Currency": "USD"
+	}, {
+		"Sequence": 4,
+		"Qty": 1000,
+		"ListPrice": "1.97",
+		"NetCost": "1.182",
+		"DiscountCode": "R",
+		"PriceUnit": {
+			"ItemsPerUnit": "1"
+		},
+		"IsQUR": false,
+		"Currency": "USD"
+	}]
+}, {
+	"ID": 846317646,
+	"IsBasePrice": false,
+	"Description": "OTHER",
+	"Sequence": 2,
+	"ServiceCharge": "Required",
+	"UpchargeType": "Set-up Charge",
+	"UpchargeUsageType": "Per Order",
+	"Prices": [{
+		"Sequence": 1,
+		"Qty": 1,
+		"ListPrice": "75.0",
+		"NetCost": "60.0",
+		"DiscountCode": "V",
+		"PriceUnit": {
+			"ItemsPerUnit": "1"
+		},
+		"IsQUR": false,
+		"Currency": "USD"
+	}],
+	"PriceConfigurations": [{
+		"Criteria": "Imprint Method",
+		"Value": ["UNIMPRINTED"]
+	}]
+}]

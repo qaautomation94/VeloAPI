@@ -3,6 +3,8 @@ package Videos;
 
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import org.json.simple.JSONArray;
@@ -74,25 +76,27 @@ public static void PostVideo(){
 			
 			String responseBody =	 resp.getBody().asString();
 			
-			
-			
+
 			Gson gson = new Gson();
 		 	JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
 		 	JsonArray posts = jsonObject.getAsJsonArray("items");
 
-		 	
-		 	for (JsonElement post : posts) {
-		 	//	GetVideoID = post.getAsJsonObject().get("etag").getAsString();
-		 		//			System.out.println("Iftikhar1"+GetVideoID);  
-		 					 GetVideoID =  post.getAsJsonObject().get("id").getAsJsonObject().get("videoId").getAsString();
-	 					  	System.out.println(GetVideoID);  
+		 	int a=posts.size();
+		 	Random rand = new Random();
+			int randomno= rand.nextInt(a);
+			List<String> zoom = new ArrayList<>();
 
+
+		 	for (JsonElement post : posts) {
+		 					 GetVideoID =  post.getAsJsonObject().get("id").getAsJsonObject().get("videoId").getAsString();
+		 					zoom.add(GetVideoID);
+		 					 System.out.println(GetVideoID);  
 		 	
+		 					 System.out.println(zoom.get(0));  
 		 	}
 		 	
 
-			String data=resp.asString();
-			
+			GetVideoID=zoom.get(randomno);
 		  	
 		  	System.out.println("URL is "+"https://www.youtube.com/watch?v="+GetVideoID);
 		  	item.put("URL", "https://www.youtube.com/watch?v="+GetVideoID);
@@ -102,13 +106,6 @@ public static void PostVideo(){
 		  	request.body(array.toJSONString());
 		//  resp=request.post(TestData.BaseUrl+TestData.PostVideo);
 			resp =request.request(Method.POST,TestData.BaseUrl+TestData.PostVideo);
-			String data1=resp.asString();
-
-			System.out.println("data1  is:"+data1);
-			PostedVideoID=data1.substring(data1.lastIndexOf("videoId") + 8, data1.lastIndexOf("videoId") + 16);
-			System.out.println("Posted Video ID Code is:"+PostedVideoID);
-
-			System.out.println(PostedVideoID);
 			statusCode=resp.getStatusCode();
 			System.out.println("Status Code is:"+statusCode);
 			Assert.assertEquals(statusCode, 201);
@@ -120,19 +117,30 @@ public static void PostVideo(){
 @Test(priority=3)	
 public void GetAllVideoAfterPostingNewVideo(){
 	 
-			Base.Headers();
-			resp =request.request(Method.GET,TestData.BaseUrl+TestData.GetAllVideo);
-			String responseBody =	 resp.getBody().asString();
-			Gson gson = new Gson();
-		 	JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
-		 	
-			jsonObject = new JsonParser().parse(responseBody).getAsJsonObject();
-			VideoCountAfterPosting=jsonObject.get("TotalCount").getAsString();
+	Base.Headers();
+	resp =request.request(Method.GET,TestData.BaseUrl+TestData.GetAllVideo);
+	String responseBody =	 resp.getBody().asString();
 
-	 		Assert.assertNotEquals(VideoCountBeforePosting, VideoCountAfterPosting);
-			statusCode = resp.getStatusCode();
-			System.out.println("the status code is: "+ statusCode);
-			Assert.assertEquals(statusCode, 200);
+		Gson gson = new Gson();
+ 	JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
+ 	JsonArray posts = jsonObject.getAsJsonArray("Videos");
+
+ 	for (JsonElement post : posts) {
+ 		PostedVideoID = post.getAsJsonObject().get("ID").getAsString();
+ 	  System.out.println(GetVideoID);
+ 	}
+
+
+ 	statusCode = resp.getStatusCode();
+ 	Assert.assertEquals(statusCode, 200);
+		
+	// Method 1: parsing into a JSON element
+	jsonObject = new JsonParser().parse(responseBody).getAsJsonObject();
+	VideoCountAfterPosting=jsonObject.get("TotalCount").getAsString();
+	System.out.println(VideoCountAfterPosting);
+	statusCode = resp.getStatusCode();
+	System.out.println("the status code is: "+ statusCode);
+	Assert.assertEquals(statusCode, 200);
 
 }
 

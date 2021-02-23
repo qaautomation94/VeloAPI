@@ -5,7 +5,7 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
 
 import Videos.Base;
-
+// LEA-19-7218
 		public class ProductAPI extends Base{
 	
 		@Test(priority=1)
@@ -60,27 +60,7 @@ import Videos.Base;
 	
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 /*
  

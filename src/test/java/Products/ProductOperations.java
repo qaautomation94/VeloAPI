@@ -84,7 +84,6 @@ public static void GetDeletedProduct(){
 
 }
 
-
 @SuppressWarnings("unchecked")
 public static void GetAllProductsAfterDeletion(){
 	 	Base.Headers();
@@ -112,7 +111,6 @@ public static void GetAllProductsAfterDeletion(){
 public static void PostProduct() throws IOException, ParseException{
 	 
 				Base.Headers();
-				
 				
 				   String fileName = "Json\\product.json";
 				   File fileToBeModified = new File(fileName);

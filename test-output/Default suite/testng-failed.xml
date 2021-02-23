@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Products.ProductAPI">
+      <class name="Price.PriceAPI">
         <methods>
-          <include name="PostProduct"/>
+          <include name="GetPostedProductPriceGrids"/>
           <include name="ExtentReport"/>
+          <include name="GetSinglePriceGrid"/>
+          <include name="PostProduct"/>
+          <include name="DeleteSinglePriceGrid"/>
           <include name="TokenGeneration"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- Products.ProductAPI -->
+      </class> <!-- Price.PriceAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

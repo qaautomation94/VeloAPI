@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Muhammad.Iftikhar\AppData\Local\Temp\testng-eclipse-183666783\testng-customsuite.xml</span>
+                    <span>C:\Users\Muhammad.Iftikhar\AppData\Local\Temp\testng-eclipse--2115197844\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Price.PriceAPI" class="method navigator-link" hash-for-method="DeleteSinglePriceGrid">DeleteSinglePriceGrid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,47 +118,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="DeleteExistingProduct">DeleteExistingProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Price.PriceAPI" class="method navigator-link" hash-for-method="GetPostedProductPriceGrids">GetPostedProductPriceGrids</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="DeleteProduct">DeleteProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Price.PriceAPI" class="method navigator-link" hash-for-method="GetSinglePriceGrid">GetSinglePriceGrid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="GetAllProducts">GetAllProducts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="GetDeletedProduct">GetDeletedProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="GetPostedProduct">GetPostedProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="GetProductByXID">GetProductByXID</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="PostProduct">PostProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="PostProductwithGreaterThanRequiredNameLength">PostProductwithGreaterThanRequiredNameLength</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Products.ProductAPI" class="method navigator-link" hash-for-method="PostProductwithSpecialCharacterInNme">PostProductwithSpecialCharacterInNme</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Price.PriceAPI" class="method navigator-link" hash-for-method="PostProduct">PostProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -159,52 +143,78 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Products.ProductAPI</span>
+              <img src="failed.png"/>
+              <span class="class-name">Price.PriceAPI</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteExistingProduct">
-                  </a> <!-- DeleteExistingProduct -->
-                  <span class="method-name">DeleteExistingProduct</span>
+                  <a name="DeleteSinglePriceGrid">
+                  </a> <!-- DeleteSinglePriceGrid -->
+                  <span class="method-name">DeleteSinglePriceGrid</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at Price.PriceOperations.DeleteSinglePriceGrid(PriceOperations.java:226)
+	at Price.PriceAPI.DeleteSinglePriceGrid(PriceAPI.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Price.PriceAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetPostedProductPriceGrids">
+                  </a> <!-- GetPostedProductPriceGrids -->
+                  <span class="method-name">GetPostedProductPriceGrids</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteProduct">
-                  </a> <!-- DeleteProduct -->
-                  <span class="method-name">DeleteProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetAllProducts">
-                  </a> <!-- GetAllProducts -->
-                  <span class="method-name">GetAllProducts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetDeletedProduct">
-                  </a> <!-- GetDeletedProduct -->
-                  <span class="method-name">GetDeletedProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetPostedProduct">
-                  </a> <!-- GetPostedProduct -->
-                  <span class="method-name">GetPostedProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetProductByXID">
-                  </a> <!-- GetProductByXID -->
-                  <span class="method-name">GetProductByXID</span>
+                  <a name="GetSinglePriceGrid">
+                  </a> <!-- GetSinglePriceGrid -->
+                  <span class="method-name">GetSinglePriceGrid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,26 +224,12 @@
                   <span class="method-name">PostProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PostProductwithGreaterThanRequiredNameLength">
-                  </a> <!-- PostProductwithGreaterThanRequiredNameLength -->
-                  <span class="method-name">PostProductwithGreaterThanRequiredNameLength</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PostProductwithSpecialCharacterInNme">
-                  </a> <!-- PostProductwithSpecialCharacterInNme -->
-                  <span class="method-name">PostProductwithSpecialCharacterInNme</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Muhammad.Iftikhar\AppData\Local\Temp\testng-eclipse-183666783\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Muhammad.Iftikhar\AppData\Local\Temp\testng-eclipse--2115197844\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -242,7 +238,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Products.ProductAPI&quot;/&gt;
+      &lt;class name=&quot;Price.PriceAPI&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -282,48 +278,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PostProduct')
-data.setCell(0, 2, 'Products.ProductAPI')
-data.setCell(0, 3, 26621);
+data.setCell(0, 2, 'Price.PriceAPI')
+data.setCell(0, 3, 24336);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GetAllProducts')
-data.setCell(1, 2, 'Products.ProductAPI')
-data.setCell(1, 3, 19794);
+data.setCell(1, 1, 'DeleteSinglePriceGrid')
+data.setCell(1, 2, 'Price.PriceAPI')
+data.setCell(1, 3, 5929);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PostProductwithGreaterThanRequiredNameLength')
-data.setCell(2, 2, 'Products.ProductAPI')
-data.setCell(2, 3, 6059);
+data.setCell(2, 1, 'GetPostedProductPriceGrids')
+data.setCell(2, 2, 'Price.PriceAPI')
+data.setCell(2, 3, 4324);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GetPostedProduct')
-data.setCell(3, 2, 'Products.ProductAPI')
-data.setCell(3, 3, 4680);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'DeleteProduct')
-data.setCell(4, 2, 'Products.ProductAPI')
-data.setCell(4, 3, 3660);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'GetProductByXID')
-data.setCell(5, 2, 'Products.ProductAPI')
-data.setCell(5, 3, 2159);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'DeleteExistingProduct')
-data.setCell(6, 2, 'Products.ProductAPI')
-data.setCell(6, 3, 1877);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'PostProductwithSpecialCharacterInNme')
-data.setCell(7, 2, 'Products.ProductAPI')
-data.setCell(7, 3, 1648);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'GetDeletedProduct')
-data.setCell(8, 2, 'Products.ProductAPI')
-data.setCell(8, 3, 1635);
+data.setCell(3, 1, 'GetSinglePriceGrid')
+data.setCell(3, 2, 'Price.PriceAPI')
+data.setCell(3, 3, 1681);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -349,86 +325,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Products.ProductAPI</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Price.PriceAPI</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">TokenGeneration</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">ExtentReport</span>
-                <span class="method-start">13339 ms</span>
+                <span class="method-start">9122 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">PostProduct</span>
-                <span class="method-start">14290 ms</span>
+                <span class="method-start">9839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=PostProduct status=SUCCESS method=ProductAPI.PostProduct()[pri:1, instance:Products...)</span>
-                <span class="method-start">40924 ms</span>
+                <span class="method-name">getResult([TestResult name=PostProduct status=SUCCESS method=PriceAPI.PostProduct()[pri:1, instance:Price.Pric...)</span>
+                <span class="method-start">34189 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">GetPostedProduct</span>
-                <span class="method-start">42904 ms</span>
+                <span class="method-name">GetPostedProductPriceGrids</span>
+                <span class="method-start">37252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=GetPostedProduct status=SUCCESS method=ProductAPI.GetPostedProduct()[pri:2, instanc...)</span>
-                <span class="method-start">47592 ms</span>
+                <span class="method-name">getResult([TestResult name=GetPostedProductPriceGrids status=SUCCESS method=PriceAPI.GetPostedProductPriceGrid...)</span>
+                <span class="method-start">41581 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">DeleteProduct</span>
-                <span class="method-start">47839 ms</span>
+                <span class="method-name">GetSinglePriceGrid</span>
+                <span class="method-start">41791 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=DeleteProduct status=SUCCESS method=ProductAPI.DeleteProduct()[pri:3, instance:Prod...)</span>
-                <span class="method-start">51506 ms</span>
+                <span class="method-name">getResult([TestResult name=GetSinglePriceGrid status=SUCCESS method=PriceAPI.GetSinglePriceGrid()[pri:3, insta...)</span>
+                <span class="method-start">43478 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">PostProductwithGreaterThanRequiredNameLength</span>
-                <span class="method-start">51716 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteSinglePriceGrid</span>
+                <span class="method-start">43739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=PostProductwithGreaterThanRequiredNameLength status=SUCCESS method=ProductAPI.PostP...)</span>
-                <span class="method-start">57779 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">PostProductwithSpecialCharacterInNme</span>
-                <span class="method-start">58164 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=PostProductwithSpecialCharacterInNme status=SUCCESS method=ProductAPI.PostProductwi...)</span>
-                <span class="method-start">59815 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">GetAllProducts</span>
-                <span class="method-start">60086 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=GetAllProducts status=SUCCESS method=ProductAPI.GetAllProducts()[pri:6, instance:Pr...)</span>
-                <span class="method-start">79893 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">GetProductByXID</span>
-                <span class="method-start">80201 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=GetProductByXID status=SUCCESS method=ProductAPI.GetProductByXID()[pri:7, instance:...)</span>
-                <span class="method-start">82365 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">DeleteExistingProduct</span>
-                <span class="method-start">82678 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=DeleteExistingProduct status=SUCCESS method=ProductAPI.DeleteExistingProduct()[pri:...)</span>
-                <span class="method-start">84559 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">GetDeletedProduct</span>
-                <span class="method-start">84750 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=GetDeletedProduct status=SUCCESS method=ProductAPI.GetDeletedProduct()[pri:9, insta...)</span>
-                <span class="method-start">86388 ms</span>
+                <span class="method-name">getResult([TestResult name=DeleteSinglePriceGrid status=FAILURE method=PriceAPI.DeleteSinglePriceGrid()[pri:4,...)</span>
+                <span class="method-start">49679 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
